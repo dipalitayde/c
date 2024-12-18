@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body style="background-color: bisque; ">
+       
+        <mark id="my" style="font-family: cursive; color: darkblue;"></mark>
+        <mark id="my2" style="font-family: cursive; color: darkblue;"></mark>
+        <script>
+            var person = {
+                firstname: "My name is durva  ",
+                age: 15, 
+                grade: "grade 11th"
+            };
+    var value = Math.abs(40);
+    document.write("Demo Test value:" + value + "<br>");
+
+    var value = Math.acos(-1);
+    document.write("Demo1 Test value:" + value + "<br>");
+
+    var value = Math.asin(1);
+    document.write("Demo2 Test value:" + value + "<br>");
+
+    var value = Math.atan(100);
+
+    document.write("Demo3 Test value:" + value + "<br><br>");
+
+    function findMax() {
+            var i;
+            var max = 0;
+            for (i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+
+        document.getElementById("my2").innerHTML = findMax(10, 55, 90);
+
+            document.getElementById("my").innerHTML = person.firstname + "and I am <br>" + person.age + "Year old  <br> and I am in " +person.grade + ".<br>"
+        </script>
+    </body>
+</html>
